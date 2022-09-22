@@ -49,7 +49,7 @@ const PostCard = ({
               }}
             />
           </View>
-          <View
+          <View   
             style={{
               ...styles.cardWrapper,
               marginBottom: 40,
