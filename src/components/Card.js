@@ -34,7 +34,7 @@ const MadBow = [
 
 const Card = () => {
   return (
-    <View>
+    <View>    
       <PostCard
         image={require("../../assets/Untitled-1.png")}
         imagecustomStyle={{
