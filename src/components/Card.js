@@ -38,7 +38,7 @@ const Card = () => {
       <PostCard
         image={require("../../assets/Untitled-1.png")}
         imagecustomStyle={{
-          height: 22,
+          height: 22,    
           width: 42,
         }}
         cardTitle="Bazar India"
