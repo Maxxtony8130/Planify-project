@@ -20,21 +20,37 @@ const PostCard = ({
   return (
     <View style={styles.container}>
       <View style={styles.cardContainer}>
-        <View style={styles.cardWrapper}>
+        <View
+          style={{
+            ...styles.cardWrapper,
+            justifyContent: "flex-start",
+          }}
+        >
           <View style={styles.imageContainer}>
-            <Image
-              // source={require("../../assets/Untitled-1.png")}
-              source={image}
-              style={styles.img}
-            />
+            <Image source={image} style={styles.img} />
           </View>
+
           <View
             style={{
               flexDirection: "column",
               justifyContent: "space-between",
+              flex: 1,
+              marginLeft: 16,
             }}
           >
-            <Text style={styles.cartTitle}>{cardTitle}</Text>
+            <View style={styles.cardWrapper}>
+              <Text style={styles.cartTitle}>{cardTitle}</Text>
+              <View style={styles.cardWrapper}>
+                <FontAwesome
+                  name="rupee"
+                  size={12}
+                  color="#4D4F5C"
+                  style={styles.rupeesIconStyle}
+                />
+                <Text style={styles.cardRateText}>{CardRate}</Text>
+              </View>
+            </View>
+
             <FlatList
               data={data}
               horizontal
@@ -48,20 +64,6 @@ const PostCard = ({
                 );
               }}
             />
-          </View>
-          <View   
-            style={{
-              ...styles.cardWrapper,
-              marginBottom: 40,
-            }}
-          >
-            <FontAwesome
-              name="rupee"
-              size={12}
-              color="#4D4F5C"
-              style={styles.rupeesIconStyle}
-            />
-            <Text style={styles.cardRateText}>{CardRate}</Text>
           </View>
         </View>
         <View style={{ marginVertical: 26 }}>
