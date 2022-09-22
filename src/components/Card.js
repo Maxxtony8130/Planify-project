@@ -32,12 +32,15 @@ const MadBow = [
   },
 ];
 
-
 const Card = () => {
   return (
     <View>
       <PostCard
         image={require("../../assets/Untitled-1.png")}
+        imagecustomStyle={{
+          height: 22,
+          width: 42,
+        }}
         cardTitle="Bazar India"
         data={BazarIndia}
         CardRate="70"
@@ -49,8 +52,8 @@ const Card = () => {
         Investors="17.42%"
         Equity="175"
       />
-       <PostCard
-        image={require("../../assets/Untitled-1.png")}
+      <PostCard
+        image={require("../../assets/Group_8778.png")}
         cardTitle="Madbow"
         data={MadBow}
         CardRate="60"

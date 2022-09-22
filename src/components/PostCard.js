@@ -16,6 +16,7 @@ const PostCard = ({
   RasiedValue,
   Investors,
   Equity,
+  imagecustomStyle,
 }) => {
   return (
     <View style={styles.container}>
@@ -27,7 +28,7 @@ const PostCard = ({
           }}
         >
           <View style={styles.imageContainer}>
-            <Image source={image} style={styles.img} />
+            <Image source={image} style={[styles.img, imagecustomStyle]} />
           </View>
 
           <View
@@ -167,8 +168,8 @@ const styles = StyleSheet.create({
   },
   img: {
     resizeMode: "contain",
-    height: 22,
-    width: 42,
+    height: 64,
+    width: 64,
   },
   cartTitle: {
     fontSize: 18,
