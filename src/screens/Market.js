@@ -4,7 +4,7 @@ import React from "react";
 const Market = () => {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Market</Text>
+      <Text style={{ color: "#707070", fontSize: 16 }}>No data available in Market Section</Text>
     </View>
   );
 };

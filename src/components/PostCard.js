@@ -105,7 +105,7 @@ const PostCard = ({
               inActiveStrokeOpacity={0.2}
               activeStrokeWidth={4}
               inActiveStrokeWidth={4}
-              duration={3000}
+              duration={4000}
             />
           </View>
         </View>

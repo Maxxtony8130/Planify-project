@@ -3,8 +3,8 @@ import React from "react";
 
 const PostScreen = () => {
   return (
-    <View>
-      <Text>PostScreen</Text>
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+      <Text style={{ color: "#707070", fontSize: 16 }}>No data available in Post Section</Text>
     </View>
   );
 };

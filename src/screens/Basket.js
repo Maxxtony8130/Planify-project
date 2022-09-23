@@ -4,7 +4,7 @@ import React from "react";
 const Basket = () => {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Basket</Text>
+      <Text style={{ color: "#707070", fontSize: 16 }}>No data available in Basket Section</Text>
     </View>
   );
 };
